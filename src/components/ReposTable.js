@@ -40,8 +40,8 @@ function SimpleTable(props) {
           <TableRow>
             <TableCell onClick={() => orderBy("name")}>Name</TableCell>
             <TableCell onClick={() => orderBy("description")}>Description</TableCell>
-            <TableCell>url</TableCell>
-            <TableCell numeric>Forks count</TableCell>
+            <TableCell onClick={() => orderBy("url")}>url</TableCell>
+            <TableCell onClick={() => orderBy("forks")} numeric>Forks count</TableCell>
             <TableCell onClick={() => orderBy("watchers_count")} numeric>Watchers Count</TableCell>
           </TableRow>
         </TableHead>
